@@ -146,6 +146,7 @@ class MainViewController: UIViewController {
     
     override func viewWillAppear(_ animated: Bool) {
         super.viewWillAppear(animated)
+        self.view.backgroundColor = .systemBackground
         designateNavigationSetting()
         AppUtility.lockOrientation(.portrait, andRotateTo: .portrait)
     }
